@@ -1,0 +1,22 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  margin: auto auto auto auto;
+  width: 70%;
+  background-color: darkblue;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+body > header,
+body > main,
+body > footer {
+  width: 100%;
+  margin: auto auto 2vw auto;
+}
