@@ -6,11 +6,19 @@ terraform {
   }
 }
 
-provider "docker" {}
+provider "docker" {
+}
+
+data "docker_registry_image" "nginx" {
+  name         = "nginx:latest"
+}
 
 resource "docker_image" "nginx" {
-  name         = "nginx:latest"
-  keep_locally = false
+  name          = data.docker_registry_image.nginx.name
+  pull_triggers = [
+    data.docker_registry_image.nginx.sha256_digest
+  ]
+  keep_locally  = true
 }
 
 resource "docker_container" "nginx" {
@@ -18,7 +26,7 @@ resource "docker_container" "nginx" {
   name  = "tutorial"
   ports {
     internal = 80
-    external = 8000
+    external = 8080
   }
 }
 
