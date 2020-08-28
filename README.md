@@ -6,3 +6,9 @@ Most will use YAML or JSON files for configuration, but some approaches use scri
 
 All of this means that you no longer need to rely on UI-based settings selections, since you should be able to design and deploy your infrastructure through scripts and files that can be shared, duplicated, and monitored for changes. This adds consistency, extensibility, and sensible management to your cloud infrastructure.
 
+## Terraform
+
+Prequisites:
+
+- Install Docker
+- Install Terraform
