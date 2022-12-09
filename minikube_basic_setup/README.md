@@ -2,4 +2,11 @@
 
 <!-- MarkdownTOC -->
 
+- References
+
 <!-- /MarkdownTOC -->
+
+## References
+
+- https://minikube.sigs.k8s.io/docs/start/
+- https://kubernetes.io/docs/reference/kubectl/

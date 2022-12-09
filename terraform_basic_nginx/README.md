@@ -7,6 +7,7 @@ This basic Terraform demo is based on the introduction provided in the Terraform
 - Running
 - Inspecting
 - Teardown
+- References
 
 <!-- /MarkdownTOC -->
 
@@ -40,3 +41,9 @@ To see the runtime plan for Terraform: `terraform plan` -- this will print-out t
 Note that this will also delete the Docker image(s) that you had built and created containers with.
 
 The confirmation on `destroy` is so that you can verify the `terraform plan` output that's showing the undo steps that will be taken to stop and remove the running container(s). This is shown so that you have a chance to confirm that you want all the depicted steps to be executed as shown.
+
+## References
+
+- https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+- https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+- https://www.nginx.com/resources/wiki/start/topics/examples/full/

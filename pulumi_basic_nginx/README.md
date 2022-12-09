@@ -9,6 +9,7 @@ This is a simple demo using __Pulumi__ with Python to create and run an Nginx co
 - Running
 - Inspecting
 - Teardown
+- References
 
 <!-- /MarkdownTOC -->
 
@@ -43,3 +44,9 @@ To check the logs from Nginx from inside the container: `docker logs nginx-...` 
 ## Teardown
 
 1. `pulumi destroy;` -- Answer "yes"
+
+
+## References
+
+- https://www.pulumi.com/docs/
+- https://www.pulumi.com/registry/packages/docker/

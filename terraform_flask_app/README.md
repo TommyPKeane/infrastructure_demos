@@ -6,7 +6,7 @@ For the purposes of this demo, we'll use `pystache` to dynamically fill-in templ
 
 ## Docker Image
 
-Here you can find the details of the [`tiangolo` Docker Image](https://github.com/tiangolo/uwsgi-nginx-flask-docker) for running `uwsgi`, Nginx, and `flask` all in a single container.
+Here you can find the details of the [`tiangolo/uwsgi-nginx-flask-docker` Docker Image](https://github.com/tiangolo/uwsgi-nginx-flask-docker) for running `uwsgi`, Nginx, and `flask` all in a single container.
 
 The image is preconfigured to provide a simple deployment, but we've used the `setup.sh` script to modify the image so that we can override the default app with our custom application.
 
@@ -40,3 +40,13 @@ To see the runtime plan for Terraform: `terraform plan` -- this will print-out t
 Note that this will also delete the Docker image(s) that you had built and created containers with.
 
 The confirmation on `destroy` is so that you can verify the `terraform plan` output that's showing the undo steps that will be taken to stop and remove the running container(s). This is shown so that you have a chance to confirm that you want all the depicted steps to be executed as shown.
+
+
+## References
+
+- https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+- https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/
+- https://flask.palletsprojects.com/en/2.2.x/quickstart/
+- https://github.com/defunkt/pystache
+- https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+- https://www.nginx.com/resources/wiki/start/topics/examples/full/
