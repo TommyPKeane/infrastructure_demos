@@ -1,4 +1,11 @@
+**/.direnv/
+
 **/.terraform/
 *.tfstate
 *.tfstate.backup
 
+*.pyc
+*.pyd
+**/__pycache__/
+
+.DS_Store
