@@ -2,7 +2,7 @@
 # @brief Main Module for Website Application
 #
 # @author Tommy P. Keane
-# @email <talk@tommypkeane.com>
+# @email <talk.to.tommypkeane@gmail.com>
 
 import pathlib;
 

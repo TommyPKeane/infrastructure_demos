@@ -2,7 +2,7 @@
 # @brief Static Files Endpoints
 #
 # @author Tommy P. Keane
-# @email <talk@tommypkeane.com>
+# @email <talk.to.tommypkeane@gmail.com>
 
 import flask;
 
