@@ -6,9 +6,17 @@ Most will use YAML or JSON files for configuration, but some approaches use scri
 
 All of this means that you no longer need to rely on UI-based settings selections, since you should be able to design and deploy your infrastructure through scripts and files that can be shared, duplicated, and monitored for changes. This adds consistency, extensibility, and sensible management to your cloud infrastructure.
 
+<!-- MarkdownTOC -->
+
+- Terraform
+- Pulumi
+
+<!-- /MarkdownTOC -->
+
+
 ## Terraform
 
-[Terraform]() is a deployment management system that uses its own scripting language ("HashiCorp Configuration Language") in `*.tf` files to orchestrate and configure deployments. Plans are then generated from these scripts, and the steps of the plans are followed to launch the deployment.
+[Terraform](https://www.terraform.io/) is a deployment management system that uses its own scripting language ("HashiCorp Configuration Language") in `*.tf` files to orchestrate and configure deployments. Plans are then generated from these scripts, and the steps of the plans are followed to launch the deployment.
 
 To run any of the __Terraform__ examples, you need to have the following prerequisites available on your system:
 
