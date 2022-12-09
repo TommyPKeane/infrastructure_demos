@@ -1,14 +1,21 @@
-# Basic Demo: Nginx
+# Demo: Terraform for Nginx Docker Container
 
-This basic Terraform demo is based on the introduction provided in the Terraform documentation.
+This basic Terraform demo is based on the introduction provided in the Terraform documentation -- [Terraform Tutorial](https://learn.hashicorp.com/tutorials/terraform/aws-build).
 
-[Terraform Tutorial](https://learn.hashicorp.com/tutorials/terraform/aws-build)
+<!-- MarkdownTOC -->
+
+- Running
+- Inspecting
+- Teardown
+
+<!-- /MarkdownTOC -->
+
 
 ## Running
 
 1. `teraform init;`
 1. `terraform apply;` -- Answer "yes"
-1. Open Browser to `http://localhost:8080` to see Nginx intro.
+1. Open Browser to [http://localhost:8080](http://localhost:8080) to see Nginx intro.
 
 The confirmation on `apply` is so that you can verify the `terraform plan` output and have a chance to confirm that you want all the steps to be executed as shown.
 

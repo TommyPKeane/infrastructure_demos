@@ -1,11 +1,21 @@
-# Demo - Pulumi Python - Nginx
+# Demo: Pulumi (Python) for Nginx Webserver
 
-This is a simple demo using __Pulumi__ with Python to create and run an Nginx container that will be externally bound to `0.0.0.0:8080` (`localhost:8080`). This simple demo should help convey the basics of __Pulumi__ and how to create and deploy a container, locally. __Pulumi__ supports Google Cloud, Azure, and AWS.
+This is a simple demo using __Pulumi__ with Python to create and run an Nginx container that will be externally bound to [http://0.0.0.0:8080](http://0.0.0.0:8080) ([http://localhost:8080](http://localhost:8080)). This simple demo should help convey the basics of __Pulumi__ and how to create and deploy a container, locally. __Pulumi__ supports Google Cloud, Azure, and AWS.
+
+<!-- MarkdownTOC -->
+
+- Docker Image
+- Setup
+- Running
+- Inspecting
+- Teardown
+
+<!-- /MarkdownTOC -->
+
 
 ## Docker Image
 
 We are using the `nginx:latest` image as supplied by the default, public Docker Hub.
-
 
 ## Setup
 

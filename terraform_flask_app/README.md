@@ -1,4 +1,4 @@
-# Demo: Custom Flask App
+# Demo: Terraform for Customizable Flask App (Python) in a running Docker Container
 
 This Terraform demo expands on the __Basic Nginx Demo__ by using a custom Docker image as defined by a local Dockerfile to deploy a pre-configured container running Python 3.8, `flask`, `uwsgi`, and Nginx. This is a simple approach to do your own Python webapp deployment, where you could build out the provided Python code and static/template files run your own website or API.
 
