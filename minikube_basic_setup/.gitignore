@@ -1,2 +1,7 @@
+# Terraform
 .terraform
 *.tfstate
+*.tfstate.backup
+
+# minikube
+logs.txt
