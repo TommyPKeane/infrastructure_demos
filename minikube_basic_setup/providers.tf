@@ -22,10 +22,22 @@ terraform {
   }
 }
 
+resource "local_file" minikube_config {
+  content  = templatefile(
+    "${path.module}/minikube_config.tftpl",
+    {
+      "DEMO_CLUSTER_IP"   = var.cluster_ip
+      "DEMO_CLUSTER_PORT" = var.cluster_port
+    },
+  )
+  filename = "~/.kube/config"
+}
+
+
 provider "kubernetes" {
   // References:
   // - https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs
 
-  config_path    = "./minikube.config"
+  config_path = local_file.minikube_config.filename
   config_context = "minikube"
 }

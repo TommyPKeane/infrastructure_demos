@@ -8,9 +8,9 @@ contexts:
     name: minikube
 clusters:
   - cluster:
-      certificate-authority: $USERHOME_DIR/.minikube/ca.crt
+      # certificate-authority: $USERHOME_DIR/.minikube/ca.crt
       extensions:
       - extension: []
       name: demo_cluster
-      server: https://$DEMO_CLUSTER_IP:$DEMO_CLUSTER_PORT
+      server: "${DEMO_CLUSTER_IP}:${DEMO_CLUSTER_PORT}"
     name: minikube
