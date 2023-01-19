@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "demo_terraform_localstack"
+version = "1.0.0"
+description = "Using localstack for Terraform setup of AWS Elements"
+authors = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+maintainers = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+homepage = "https://www.tommypkeane.com"
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+terraform-local = "^0.6"
+awscli-local = "^0.20"
